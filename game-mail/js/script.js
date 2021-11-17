@@ -19,6 +19,8 @@ for ( let i = 0; i < mailParticipants.length; i++ ){
         verifiedMail = true;
     }
 }
+
+// stampo il messaggio se può o meno accedere al file
 if (verifiedMail){
     alert('Perfetto!, puoi accedere al file !')
 }
