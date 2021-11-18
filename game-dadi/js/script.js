@@ -1,12 +1,12 @@
 // GAME DADI
 
 // genero il numero del giocatore
-let playerNumber = Math.floor(Math.random() * 10) + 1 ;
-console.log(playerNumber)
+let playerNumber = Math.floor(Math.random() * 6) + 1 ;
+console.log('player:', playerNumber);
 
 // genero il numero del computer
-let computerNumber = Math.floor(Math.random() * 10) + 1 ;
-console.log(computerNumber)
+let computerNumber = Math.floor(Math.random() * 6) + 1 ;
+console.log('computer', computerNumber);
 
 // confronto il numero del giocatore e del computer e stabilisco chi ha vinto
 if (playerNumber > computerNumber){
@@ -18,3 +18,7 @@ else if (playerNumber < computerNumber){
 else {
     alert('questo è un pareggio, nessuno dei due ha vinto...');
 }
+
+// output
+
+const gameMessage = `il tuo numero è ${playerNumber} mentre il numero del computer è ${computerNumber}`;
